@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
-from baosteelpipe.handler import APIHandler
-import baosteelpipe.libs.utils as utils
-import baosteelpipe.model.user as user_model
+from baosteel100.handler import APIHandler
+import baosteel100.libs.utils as utils
+import baosteel100.model.user as user_model
 
 class UserHandler(APIHandler):
     _model = "user.UserModel"

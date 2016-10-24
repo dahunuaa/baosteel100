@@ -4,7 +4,7 @@
 # Created on 2016-03-02
 #
 
-from baosteelpipe import status
+from baosteel100 import status
 
 status.ORDER_STATUS = [
     ('waiting',0,u'待支付'),

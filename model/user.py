@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
-import baosteelpipe.model.model as model
-import baosteelpipe.libs.utils as utils
-from baosteelpipe.libs.utils import options
+import baosteel100.model.model as model
+import baosteel100.libs.utils as utils
+from baosteel100.libs.utils import options
 
 class UserModel(model.BaseModel,model.Singleton):
     __name = "dxb.user"

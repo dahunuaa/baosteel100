@@ -27,17 +27,17 @@ from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
 from tornado.options import options
 try:
-    import baosteelpipe
+    import baosteel100
 except ImportError:
     import sys
     sys.path.append(os.path.join(_root, ".."))
 
-from baosteelpipe.libs.options import parse_options
-from baosteelpipe import consts
+from baosteel100.libs.options import parse_options
+from baosteel100 import consts
 
 class Application(web.Application):
     def __init__(self):
-        from baosteelpipe.urls import handlers, ui_modules
+        from baosteel100.urls import handlers, ui_modules
 
         settings = dict(debug=options.debug,
                         template_path=os.path.join(os.path.dirname(__file__),

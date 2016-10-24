@@ -2,7 +2,7 @@
 
 from tornado.options import options
 from tornado.web import url
-from baosteelpipe.handler import APIErrorHandler
+from baosteel100.handler import APIErrorHandler
 import sys
 
 handlers = []
@@ -49,9 +49,9 @@ def _autoload_models(root_module,modelnames):
         module_name = "%s.%s" % (root_module,name)
         __import__(module_name)
 
-_generate_handler_patterns("baosteelpipe.handlers", handler_names)
-_generate_handler_patterns("baosteelpipe.handlers.admin", admin_names)
-_autoload_models("baosteelpipe.model",modelnames)
+_generate_handler_patterns("baosteel100.handlers", handler_names)
+_generate_handler_patterns("baosteel100.handlers.admin", admin_names)
+_autoload_models("baosteel100.model",modelnames)
 
 
 # Override Tornado default ErrorHandler

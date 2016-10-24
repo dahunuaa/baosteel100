@@ -6,13 +6,13 @@
 """
 
 import pdb,datetime
-import baosteelpipe.model.mongo as mongo
-import baosteelpipe.libs.utils as utils
+import baosteel100.model.mongo as mongo
+import baosteel100.libs.utils as utils
 import sys
 import inspect
 import json
 
-from baosteelpipe.libs.utils import options
+from baosteel100.libs.utils import options
 
 class Singleton(object):
     def __new__(cls, *args, **kw):
@@ -96,7 +96,7 @@ class BaseModel(object):
         try:
             model_filename = model_name.split(".")[0]
             model_classname = model_name.split(".")[1]
-            model_obj = sys.modules['%s.%s'%("baosteelpipe.model",model_filename)]
+            model_obj = sys.modules['%s.%s'%("baosteel100.model",model_filename)]
             models = inspect.getmembers(model_obj,inspect.isclass)
             for m in models:
                 if m[0] == model_classname:

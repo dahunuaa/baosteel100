@@ -4,10 +4,10 @@
 import platform
 import os
 import time
-import baosteelpipe
+import baosteel100
 version = "v1.0"
 
-root_dir = os.path.dirname(os.path.abspath(baosteelpipe.__file__))
+root_dir = os.path.dirname(os.path.abspath(baosteel100.__file__))
 root_path = root_dir
 debug = False
 login_url = "https://lcoalhost/login"
@@ -32,9 +32,9 @@ if not debug:
 mongo = {
             "host":"localhost",
             "port":27017,
-            "database":"baosteelpipe",
-            "user":"baosteelpipe",
-            "password":"baosteelpipeAdmin",
+            "database":"baosteel100",
+            "user":"baosteel100",
+            "password":"baosteel100Admin",
         }
 ##是否启用mongodb用户认证
 mongo_auth = False
@@ -64,7 +64,7 @@ home_url = "http://%s/api" % domain
 root_log_path = os.path.join(root_path,'var','log')
 loglevel = "INFO"  # for celeryd
 app_url_prefix = ""
-sitename = "baosteelpipe api"
+sitename = "baosteel100 api"
 
 cookie_secret = "ace87395-8272-4749-b2f2-dcabd3901a1c"
 xsrf_cookies = False
