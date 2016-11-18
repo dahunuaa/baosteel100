@@ -48,13 +48,4 @@ class Status(object):
 
 sys.modules[__name__] = Status()
 
-# status = Status()
-#
-# status.ORDER_STATUS=[
-#     ('waiting',0,u'待支付'),
-#     ('service',1,u'服务中'),
-#     ('complete',2,u'已完成'),
-#     ('cancel',3,u'已取消'),
-# ]
-
 
